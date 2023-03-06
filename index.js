@@ -9,7 +9,7 @@ const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
 const render = require("./src/page-template.js");
-
+const validator = require("email-validator");
 
 // TODO: Write Code to gather information about the development team members, and render the HTML file.
 const teamMembers = [];
@@ -45,10 +45,10 @@ const appMenu = () => {
                 name: 'engineerEmail',
                 message: "What is the team engineer's email?",
                 validate: answer => {
-                    if(answer !== "") {
+                    if(validator.validate(answer)) {
                         return true;
                     } 
-                    return "Please enter atleast one character.";
+                    return "Please enter a valid email address";
                 }
             },
             {
@@ -100,10 +100,10 @@ const appMenu = () => {
                 name: 'internEmail',
                 message: "What is the team intern's email?",
                 validate: answer => {
-                    if(answer !== "") {
+                    if(validator.validate(answer)) {
                         return true;
                     } 
-                    return "Please enter atleast one character.";
+                    return "Please enter a valid email address";
                 }
             },
             {
@@ -189,10 +189,10 @@ const appMenu = () => {
                 name: 'managerEmail',
                 message: "What is the team manager's email?",
                 validate: answer => {
-                    if(answer !== "") {
+                    if(validator.validate(answer)) {
                         return true;
                     } 
-                    return "Please enter atleast one character.";
+                    return "Please enter a valid email address";
                 }
             },
             {
