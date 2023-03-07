@@ -1,9 +1,7 @@
 # Project-Team-Page-Generator
 
 ## Project Links
-Deployed Link: https://github.com/nrprabhav/Project-Team-Page-Generator
-
-Repository Link: https://nrprabhav.github.io/Project-Team-Page-Generator/
+Repository Link: https://github.com/nrprabhav/Project-Team-Page-Generator
 
 ## Description
 A javascript code that generates a HTML page with details of the project team from inputs in the command line.
@@ -19,7 +17,7 @@ A javascript code that generates a HTML page with details of the project team fr
 Run 'npm install'
 
 ## Outputs
-The output HTML file is kept in the './output' folder
+The output HTML file can be found here: ![](./output/team.html)
 
 ## Testing
 The code can be tested using 'npm run test'.
