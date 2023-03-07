@@ -17,7 +17,7 @@ A javascript code that generates a HTML page with details of the project team fr
 Run 'npm install'
 
 ## Outputs
-The output HTML file can be found here: ![](./output/team.html)
+The output HTML file can be found here: './output/team.html'
 
 ## Testing
 The code can be tested using 'npm run test'.
